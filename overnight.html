@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Château d'Émeraude</title>
+</head>
+<body>
+    <header>
+        <h1>Château d'Émeraude</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Château</a></li>
+            <li><a href="overnight.html">Accommodations</a></li>
+        </ul>
+    </nav>
+    <form action="" onsubmit="estimateBtnClicked(event);">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <div>
+            <label for="dateSelection">Select A Date</label>
+            <input type="date" name="dateSelection" id="arrivalDate" placeholder="Arrival Date">
+            <input type="number" name="" id="numNights" placeholder="Nights">
+            <br>
+            <input type="number" placeholder="Number of Room" id="numRoom">
+        </div>
+
+        <fieldset>
+            <legend>Room Types:</legend>
+            <input type="radio" name="roomType" id="queen" value="queen"> Queen Room <br>
+            <input type="radio" name="roomType" id="king" value="king"> King Room <br>
+            <input type="radio" name="roomType" id="suite" value="suite"> Suite <br>
+        </fieldset>
+
+        <label for="numAdults">Number of Adults:</label>
+        <select name="numAdults" id="numAdults">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+        </select>
+
+        <label for="numKids">Number of Children</label>
+        <select name="numKids" id="numKids">
+            <option value="0">Zero</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="4">Four</option>
+        </select>
+
+        <fieldset>
+            <legend> Discount Types</legend>
+                <input type="radio" name="discount" value="senior"> Senior Discount <br>
+                <input type="radio" name="discount" value="military"> Military Discount <br>
+        </fieldset>
+
+        <br>
+        <button> Estimate Stay Cost</button>
+        <p id="roomCost"></p>
+        <p id="discount"></p>
+        <p id="discountedRoom"></p>
+        <p id="tax"></p>
+        <p id="totalCost"></p>
+    </form>
+
+    <script src="./scripts/overnight.js"></script>
+</body>
+</html>
