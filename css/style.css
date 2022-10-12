@@ -1,8 +1,11 @@
 h1, ul li a{
   font-family: 'Cinzel', serif;
-  color: #563d2d;
 }
 
-a:link {
-  color: #563d2d;
+a:link, a:hover, a:visited {
+  color: #f2f4f3;
+}
+
+nav {
+  background: #b68d40;
 }
